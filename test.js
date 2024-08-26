@@ -27,12 +27,12 @@ console.log(3 ** (9 / 3)); // Результат: 27. 3 в 3 степени об
 
 console.log(!!'false' == !!'true'); // Результат: true
 
-console.log(0 || '0' && 1); // Результат: 1
+console.log(0 || '0' && 1); // Результат: 1. 
 
 console.log((+null == false) < 1); // Результат: false. Null і строге дорівнює буде false, а false < 1 поверне false
 
-console.log(false && true || true); // Результат: true
+console.log(false && true || true); // Результат: true. false і true видасть false (бо оператор і зупиняється на першому false), далі false або true видасть перше true (бо опреатор або видає перше true)
 
-console.log(false && (false || true)); // Результат: false. 
+console.log(false && (false || true)); // Результат: false. Перша дія буде в дужках. Видасть перше true (бо опреатор або видає перше true). Далі false і true видасть false (бо оператор і зупиняється на першому false)
 
 console.log((+null == false) < 1 ** 5); // Результат: false
